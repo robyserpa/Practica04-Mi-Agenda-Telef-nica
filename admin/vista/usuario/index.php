@@ -62,7 +62,7 @@
         include '../../../config/conexionBD.php';
         $usuario = $_GET["usuario"];
 
-        $sql = "SELECT * FROM usuario WHERE usu_usuario = '$usuario'";
+        $sql = "SELECT * FROM usuario WHERE usu_usuario = '$usuario' and usu_eliminado='N'";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {

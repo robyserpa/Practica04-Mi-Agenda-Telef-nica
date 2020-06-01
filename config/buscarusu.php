@@ -5,7 +5,7 @@
     $texto = $_GET['texto']; 
     //echo "Hola " . $cedula; 
 
-    $sql = "SELECT * FROM usuario WHERE usu_cedula='$texto' or usu_correo='$texto'"; 
+    $sql = "SELECT * FROM usuario WHERE (usu_cedula='$texto' or usu_correo='$texto') and usu_eliminado='N'"; 
     //cambiar la consulta para puede buscar por ocurrencias de letras 
 
     $result = $conn->query($sql); 

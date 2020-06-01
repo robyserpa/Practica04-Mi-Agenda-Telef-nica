@@ -79,6 +79,10 @@
                 <input type="email" id="correo" name="correo" value="<?php echo $row["usu_correo"]; ?>"
                 required placeholder="Ingrese el correo electrónico ..."/>
                 <br>
+                <label for="eliminado">Eliminado (*)</label>
+                <input type="text" id="eliminado" name="eliminado" value="<?php echo $row["usu_eliminado"];
+                ?>" required placeholder="Restaurar N ..."/>
+                <br>
 
                 <input type="submit" id="modificar" name="modificar" value="Modificar" />
                 <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />

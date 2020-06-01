@@ -29,6 +29,7 @@
         "usu_operadora = '$operadora', " .
         "usu_usuario = '$usuario', " .
         "usu_correo = '$correo' " .
+        "usu_eliminado = '$eliminado' " .
         "WHERE usu_codigo = $codigo";
         if ($conn->query($sql) === TRUE) {
             echo "Se ha actualizado los datos personales correctamemte!!!<br>";
