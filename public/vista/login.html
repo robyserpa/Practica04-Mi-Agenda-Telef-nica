@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" type="text/css" href="../../extras/css/general.css" />
+    <link rel="stylesheet" type="text/css" href="../../extras/css/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../../extras/js/buscarusu.js"></script>
+
+</head>
+<body>
+  <header class="cabecera">
+    <a href="index.html"><img id="logo" src="../../extras/images/logo_android.png" alt=""/></a>
+    <p id="buscar">Buscar: <input type="search" ></p>
+    <a href="tel:0998831305"><img id="ajustes1" src="../../extras/images/usuario.png" alt=""></a>
+    <a href="mailto:rserpa@est.ups.edu.ec"><img id="ajustes2" src="../../extras/images/mensaje.png" alt=""></a>
+    <a href="login.html"><img id="ajustes3" src="../../extras/images/plus.png" alt=""></a>
+    <nav>
+      <ul>
+        <li><a href="audios.html">Audios</a></li>
+        <li><a href="evolucion_android.html">Evolución de Android</a></li>
+        <li><a href="datos_curiosos.html">Datos Curiosos</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="juegos.html">Juegos Android</a></li>
+        <li><a href="dispositivos.html">Mejores Dispositivos</a></li>
+        <li><a href="videos.html">Videos Android</a></li>
+        <li><a href="videos_youtube.html">Videos YouTube</a></li>
+      </ul>
+    </nav>
+    <h1>Iniciar Sesión</h1>
+  </header>
+
+    <aside class="inicio">
+        <form id="formulario01" method="POST" action="../controladores/login.php">
+            <label for="usuario">Usuario (*) </label>
+            <input type="text" id="usuario" name="usuario" value="" placeholder="Ingrese su usuario ..."/>
+            <br>
+            <br>
+            <label for="nombres">Constraseña (*)</label>
+            <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña ..."/>
+            <br>
+            <br>
+            <a href="crear_usuario.html" id="crear_usuario">Registrate</a>
+            <input type="submit" id="login" name="login" value="Iniciar Sesión" />
+        </form>
+        
+    </aside>
+
+    <aside class="datos">
+      <h2>Buscar a otras personas usando la cedula o su correo.</h2>
+      <form onsubmit="return buscarAnonimo()" > 
+        <input type="text" id="texto" name="texto" value=""> 
+        <input type="button" id="buscar1" name="buscar1" value="Buscar" 
+        onclick="buscarAnonimo()"> 
+        <br>
+        <br>
+        <div id="informacion"><b>Datos de la persona</b></div>
+        <br>
+        <br>
+      </form>
+    </aside>
+
+    <footer class="contactar">
+      <aside>
+        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+        <img src="../../extras/images/logo_social.png" alt="">
+        <p>
+          Roberto Serpa <br>
+          Correo: <a href="mailto:rserpa@est.ups.edu.ec"> rserpa@est.ups.edu.ec</a> <br>
+        </p>
+      </aside>
+      <aside>
+        <form>
+          <fieldset>
+            <legend>¿Quiénes somos nosotros?</legend>
+            <label>
+              La historia de esta pagina surge gracias al Sistema 
+              Operativo Android.
+            </label>
+            <label>Nombre del Equipo Android.Maravilloso</label>
+            <label>
+              ¿Por qué Nosotros? Somos una organización que busca 
+              información y datos curiosos de Android.
+            </label>
+            <label>Contactanos</label>
+          </fieldset>
+          </form>
+      </aside>
+      <aside>
+        <form>
+          <fieldset>
+          <legend>Luis Montoya</legend>
+          <label>
+            Asistente personal encargado de la busqueda de 
+            información y novedades acerca del sistema.
+          </label>
+          <label>Trabaja para el equipo Android.OK</label>
+          <label>¿Qué hace? 
+            Diseña imagenes con relacion al Sistema Operativo Android.
+          </label>
+          <label>Contáctalo</label>
+          </fieldset>
+          </form>
+      </aside>
+    </footer>
+</body>
+</html>
